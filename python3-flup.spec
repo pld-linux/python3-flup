@@ -28,11 +28,11 @@ Ten pakiet Pythona jest zestawem różnych modułów WSGI
 %setup -q -n flup-py3-0-%{_hash}
 
 %build
-%{__python3} setup.py build
+%py3_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python3} setup.py install \
+%py3_install \
 	--single-version-externally-managed \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
