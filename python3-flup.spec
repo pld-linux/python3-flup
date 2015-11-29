@@ -11,6 +11,7 @@ License:	X11/MIT
 Source0:	http://hg.saddi.com/flup-py3.0/archive/cc23b715b120.tar.bz2/flup-%{version}_%{_snap}.tar.bz2
 # Source0-md5:	9bf9ba90d9b8d112eff998286597c534
 URL:		http://www.saddi.com/software/flup/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python3-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	python3-distribute
